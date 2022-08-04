@@ -1,0 +1,91 @@
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    font-family: 'Kanit', sans-serif; /*font-family = Propriedade para importar a fonte linkada no html.*/
+    
+
+    background-image: url(../images/sitebackground3.jpg); /*background-image = Prop para importar imagem de fundo do site.*/
+    background-repeat: no-repeat; /*background-repeat = Prop para desativar repetição da imagem de fundo do site.*/
+    background-size:cover; /*background-size = prop para preencher a imagem de fundo do site na tela inteira*/
+    min-height: 100vh;
+
+}
+
+.cabecalho /*. puxa uma classe do html para acionar propriedades a mesma.*/ {
+    display: flex; /*display block/flex ajusta o alinhamento dos elementos. block = em cima / flex = lado a lado.*/
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    padding-top: 50px;
+}
+
+.cabecalho .title {
+    color: rgba(255, 0, 0, 0.808);
+}
+
+.cabecalho .logo {
+    width: 400px; /*largura*/
+    height: 120px; /*altura*/
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 100px;
+}
+
+.cards {
+    width: 310px;
+    height: 520px;
+    position: relative;
+}
+
+.art {
+    width: 155px;
+    height: 220px;
+}
+
+.btn-seta {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer; /*escolhe o tipo de cursor que vai mostrar ao elemento.*/
+    transition: background-color 0.3s ease-in-out; /*efeito de transição para elementos.*/
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn-seta.btn-back {
+    transform: rotateY(180deg); /*transform = manipula o elemento na classe.*/
+}
+
+.btn-seta:hover {
+    background-color: rgb(250, 6, 6);
+} /*Hover é uma subclasse.*/
+
+.list {
+    background-color: blue;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.list.select {
+    opacity: 1;
+    z-index: 1;
+}
+
+.background {
+    background: url(../images/luffylv2.png) no-repeat;
+} /*continuação: Conseguir mudar a imagem de fundo e a arte dos personagens e deixar aninhado, tempo do vídeo 2:20:00*/

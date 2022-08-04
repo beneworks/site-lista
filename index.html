@@ -13,35 +13,38 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Oswald&display=swap" rel="stylesheet">
     <!--Fonte usada: https://fonts.google.com/specimen/Bebas+Neue#type-tester-->
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/styles.css">
 </head>
 
 <body>
-    <header>
-        <!--Tag de Cabeçalho-->
-        <img src="src/images/lawpiece.png" alt="iconecardgame">
-        <!--Tag de imagem, atributo src = local, alt = descrição imagem-->
-        <h1>OP Cardgame (Prototype)</h1>
-        <!--Tag de Titulo-->
-        <h2>All cards (been updated since: --/--/2022) </h2>
+    <header class="cabecalho">
+        <!--header = Tag de Cabeçalho, class = funcao de especificação de uma tag para receber propriedades somente a ela.-->
+        <img class="logo" src="src/images/lawpiece.png" alt="iconecardgame">
+        <!--img = Tag de imagem, atributo src = local, alt = descrição imagem-->
+        <h1 class = "title">OP Cardgame (Prototype)</h1>
+        <!--h1,h2,h3 = Tag de Titulo, subtitulo, descrição-->
+        <h2>All cards (been updated since: --/--/----) </h2>
     </header>
-    <main>
-        <!--Tag de conteúdo principal-->
-        <button>
+    <main class="slide">
+        <!--Main = Tag de conteúdo principal-->
+        <button class="btn-seta btn-back">
             <img src="src/images/setaenter.png" alt="backbutton">
         </button>
-        <ul>
+        <ul class="cards">
             <!--Tag de lista (ul = aleatório / ol = ordenada)-->
-            <li>
-                <!--Tag de itens de lista, usada na ul/ol-->
+            <li class="list select">
+                <!--li = Tag de itens de lista, usada na ul/ol-->
                 <div>
-                    <!--Tag de divisão ou seção de documento-->
-                    <h2>Monkey D. luffy</h2>
+                    <!--div = Tag de divisão ou seção de documento-->
+                    <h2>Monkey D. Luffy</h2>
                     <p>Class: Captain</p>
-                    <!--Tag de parágrafo-->
+                    <!--p = Tag de parágrafo-->
                 </div>
-                <div><img src="src/images/luffylv2.png" alt="luffyart">
+                <div><img class="art" src="src/images/luffyart.png" alt="luffyart">
                 </div>
                 <div>
                     <h3>description</h3>
@@ -49,12 +52,12 @@
                         powerful and diverse crew consisting of several infamous members.</p>
                 </div>
             </li>
-            <li>
+            <li class="list select">
                 <div>
                     <h2>Roronoa Zoro</h2>
                     <p>Class: Swordsman</p>
                 </div>
-                <div><img src="src/images/zorolv2.png" alt="zoroart">
+                <div><img class="art" src="src/images/zoroart.png" alt="zoroart">
                 </div>
                 <div>
                     <h3>description</h3>
@@ -62,12 +65,12 @@
                         crew, he was well-renowned for his outstanding abilities and accomplishments in battle.</p>
                 </div>
             </li>
-            <li>
+            <li class="list select background">
                 <div>
-                    <h2>sanji</h2>
+                    <h2>Sanji</h2>
                     <p>Class: Culinary Master</p>
                 </div>
-                <div><img src="src/images/sanjilv2.png" alt="sanjiyart">
+                <div><img class="art" src="src/images/sanjiart.png" alt="sanjiyart">
                 </div>
                 <div>
                     <h3>description</h3>
@@ -77,7 +80,7 @@
                 </div>
             </li>
         </ul>
-        <button>
+        <button class="btn-seta">
             <img src="src/images/setaenter.png" alt="nextbutton">
         </button>
 

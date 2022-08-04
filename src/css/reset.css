@@ -1,0 +1,9 @@
+* {
+    margin: 0; /* margin = Propriedade que altera o espaçamento externo de uma tag ou geral.*/
+    padding: 0; /*padding = Propriedade que altera o espaçamento interno de uma tag ou geral.*/
+    box-sizing: border-box; /*box-sizing = propriedade que anula a margem e padding (evita problemas).*/
+} /*adiciona propriedades a todos os elementos html.*/
+
+ul {
+    list-style: none; /*list-style = Propriedade do estilo da lista, none = retirar o elemento*/
+}
